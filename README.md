@@ -1,8 +1,8 @@
 ## Functions
 
 ## First milestones
-* [ ] Description
-* [ ] Intended Users
+* [x] Description
+* [x] Intended Users
 * [ ] ERDs
 * [ ] Wireframes
 * [ ] User Stories
