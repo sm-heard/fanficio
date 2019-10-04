@@ -3,8 +3,8 @@ Pulls stories off of FANFICTION DOT NET for offline viewing.  Clean, simple inte
 
 ## Resources
 
-[User stories](docs/user-stories.md)
-[Wireframes](docs/wireframe.png)
+[User stories](docs/user-stories.md)  
+[Wireframes](docs/wireframe.png)  
 [ERDs](erd.png)
 
 ## First milestones
