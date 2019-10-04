@@ -8,7 +8,7 @@ Readers of fanfic who want useful features.
 
 [User stories](docs/user-stories.md)  
 [Wireframes](docs/wireframe.png)  
-[ERDs](erd.png)
+[ERDs](docs/erd.png)
 
 ## First milestones
 * [x] Description
