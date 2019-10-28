@@ -7,8 +7,8 @@ Readers of fanfic who want useful features like offline reading and persistence 
 ## Resources
 
 [User stories](docs/user-stories.md)  
-[Wireframes](docs/wireframe.png)  
-[ERDs](docs/erd.png)  
+[Wireframes](docs/wireframe.md)  
+[ERDs](docs/erd.md)  
 [DDL](docs/ddl.md)
 
 ## First milestones
