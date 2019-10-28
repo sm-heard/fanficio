@@ -1,4 +1,4 @@
 
 ## ERD
 
-[![ERD](docs/erd.png)](docs/erd.pdf)
+[![ERD](docs/erd.png)]
