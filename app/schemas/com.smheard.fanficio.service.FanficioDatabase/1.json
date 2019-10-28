@@ -1,0 +1,123 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "51a05b313080ddd6c7a1873a183ee312",
+    "entities": [
+      {
+        "tableName": "Story",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`story_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `storyName` TEXT, `lastUpdated` INTEGER NOT NULL, `favorite` INTEGER NOT NULL, `alert` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "storyId",
+            "columnName": "story_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storyName",
+            "columnName": "storyName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastUpdated",
+            "columnName": "lastUpdated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favorite",
+            "columnName": "favorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alert",
+            "columnName": "alert",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "story_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Chapter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`chapter_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `story_id` INTEGER NOT NULL, `chapterName` TEXT NOT NULL, `lastUpdate` INTEGER NOT NULL, `lastRead` INTEGER NOT NULL, FOREIGN KEY(`story_id`) REFERENCES `Story`(`story_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "chapterId",
+            "columnName": "chapter_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storyId",
+            "columnName": "story_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chapterName",
+            "columnName": "chapterName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastUpdate",
+            "columnName": "lastUpdate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastRead",
+            "columnName": "lastRead",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "chapter_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Chapter_story_id",
+            "unique": false,
+            "columnNames": [
+              "story_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Chapter_story_id` ON `${TABLE_NAME}` (`story_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Story",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "story_id"
+            ],
+            "referencedColumns": [
+              "story_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '51a05b313080ddd6c7a1873a183ee312')"
+    ]
+  }
+}
