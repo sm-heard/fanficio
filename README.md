@@ -16,3 +16,15 @@ Readers of fanfic who want useful features.
 * [x] ERDs
 * [x] Wireframes
 * [x] User Stories
+
+## Second milestones
+* [x] Description
+* [x] Intended Users
+* [x] ERDs
+* [x] Wireframes
+* [x] User Stories
+* [x] Entity Classes
+* [x] DAO Interfaces
+* [x] Database Class
+* [x] DDL
+* [x] Chrome Inspectablity
