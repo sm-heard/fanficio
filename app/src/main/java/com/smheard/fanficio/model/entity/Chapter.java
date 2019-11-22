@@ -23,7 +23,7 @@ public class Chapter {
   @ColumnInfo(name = "chapter_id")
   long chapterId;
 
-  @ColumnInfo(name = "story_id", index = true)
+  @ColumnInfo(name = "story_id", index = true )
   private long storyId;
 
   @NonNull
