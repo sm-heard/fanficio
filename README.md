@@ -31,7 +31,7 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 [Demo](docs/demo.gif)
 
 ## Demo
-docs/demo.gif
+![Alt Text](docs/demo.gif)
 
 ## First milestones
 * [x] Description
