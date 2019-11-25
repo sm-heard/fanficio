@@ -1,7 +1,7 @@
 ## Description
 I decided to create this app because I've found reading fanfiction on fanfiction.net can be annoying sometimes.  I've often wished I had features like knowing which chapters I've already read.  I wanted to create a minimalist interface for reading that had all the features I wanted.
 
-Currently the app pulls stories (favorite list) off of fanfiction.net(user: Samghost) for offline viewing.  Has a clean, simple interface to read stories.
+Currently the app pulls stories (favorite list) off of fanfiction.net(user: Samghost) for offline viewing.  Has a clean, simple interface to read stories (material design guidelines color palette).
 
 Future intended functionality: Uses Google for authorizing (currently nonfunctional), marks chapters already read as READ, marks story as READ when all chapters have been read, database full functional and stories persist without internet connection (currently internet connection is necessary).
 
