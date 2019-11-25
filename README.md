@@ -26,7 +26,8 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 [ERDs](docs/erd.md)  
 [DDL](docs/ddl.md)  
 [License](docs/license-info.md)   
-[User Instructions](docs/user_instructions.md)
+[User Instructions](docs/user_instructions.md)   
+[JavaDocs](docs/index.html)
 
 ## First milestones
 * [x] Description
