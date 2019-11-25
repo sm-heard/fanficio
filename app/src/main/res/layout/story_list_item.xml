@@ -4,15 +4,20 @@
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:background="#e5eb34">
+
+<!--  <View-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="0dp"-->
+<!--    android:background="#000"></View>-->
   
   <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/story_title"
     android:textSize="20sp"
+    android:background="@drawable/item_background"
     android:text="test text"
     android:padding="10dp"
     android:textColor="#000"/>
-
 
 </LinearLayout>

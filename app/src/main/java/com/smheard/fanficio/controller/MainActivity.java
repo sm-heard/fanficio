@@ -1,20 +1,17 @@
 package com.smheard.fanficio.controller;
 
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.smheard.fanficio.R;
-import com.smheard.fanficio.model.dao.StoryDao;
-import com.smheard.fanficio.service.GrabFromFanfiction;
 import com.smheard.fanficio.view.StoryListAdapter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.jsoup.Jsoup;
@@ -32,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
   private ProgressBar progressBar;
 
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    recyclerView = findViewById(R.id.recycler_view);
+    recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.HORIZONTAL));
 
     initRecyclerView();
     new Load().execute();
