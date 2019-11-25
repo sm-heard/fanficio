@@ -47,3 +47,7 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 * [x] Database Class
 * [x] DDL
 * [x] Chrome Inspectablity
+
+## Third Milestone
+* [x] Documentation
+* [x] Implementation Components
