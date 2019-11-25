@@ -1,0 +1,6 @@
+com.smheard.fanficio
+com.smheard.fanficio.controller
+com.smheard.fanficio.model.dao
+com.smheard.fanficio.model.entity
+com.smheard.fanficio.service
+com.smheard.fanficio.view

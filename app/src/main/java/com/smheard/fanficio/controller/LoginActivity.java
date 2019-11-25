@@ -8,6 +8,9 @@ import android.os.Bundle;
 import com.smheard.fanficio.R;
 import com.smheard.fanficio.service.GoogleSignInService;
 
+/**
+ * Loads GoogleSignIn
+ */
 public class LoginActivity extends AppCompatActivity {
 
   private static final int LOGIN_REQUEST_CODE = 1000;

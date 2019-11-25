@@ -13,6 +13,9 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.smheard.fanficio.BuildConfig;
 
+/**
+ * google sign in service
+ */
 public class GoogleSignInService {
 
   private static Application applicationContext;
@@ -35,10 +38,19 @@ public class GoogleSignInService {
     GoogleSignInService.applicationContext = applicationContext;
   }
 
+  /**
+   * gets the sign in instance
+   * @return
+   */
+
   public static GoogleSignInService getInstance() {
     return InstanceHolder.INSTANCE;
   }
 
+  /**
+   * gets account
+   * @return
+   */
   public LiveData<GoogleSignInAccount> getAccount() {
     return account;
   }
@@ -47,6 +59,10 @@ public class GoogleSignInService {
     return exception;
   }
 
+  /**
+   * refresh sign in
+   * @return
+   */
   public Task<GoogleSignInAccount> refresh() {
     return client.silentSignIn()
         .addOnSuccessListener(this::update)
@@ -80,6 +96,10 @@ public class GoogleSignInService {
     return task;
   }
 
+  /**
+   * sign out
+   * @return
+   */
   public Task<Void> signOut() {
     return client.signOut()
         .addOnCompleteListener((account) -> update((GoogleSignInAccount) null));

@@ -22,6 +22,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+/**
+ * Loads a list of stories
+ */
 public class MainActivity extends AppCompatActivity {
 
   private RecyclerView recyclerView;

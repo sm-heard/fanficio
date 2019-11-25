@@ -10,10 +10,16 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-
+/**
+ * Custom API for fanfic written with Jsoup
+ */
 public class GrabFromFanfiction {
 
-  private static void getChapterText() throws IOException {
+  /**
+   * gets chapter text
+   * @throws IOException
+   */
+  public static void getChapterText() throws IOException {
     String root = "https://www.fanfiction.net/";
     root += getStoryLinks().get(0);
     Document document = Jsoup.connect(root).get();
@@ -41,6 +47,11 @@ public class GrabFromFanfiction {
     System.out.println("\n\n\n" + chapterText.get(chapterText.size()-1));
   }
 
+  /**
+   * gets story titles
+   * @return
+   * @throws IOException
+   */
   public ArrayList getStoryTitles() throws IOException {
     String root ="https://www.fanfiction.net/u/2819468/Samghost";
 
@@ -59,7 +70,12 @@ public class GrabFromFanfiction {
     return storyTitles;
   }
 
-  private static List getStoryLinks() throws IOException {
+  /**
+   * gets story links
+   * @return
+   * @throws IOException
+   */
+  public static List getStoryLinks() throws IOException {
     String root ="https://www.fanfiction.net/u/2819468/Samghost";
 
     Document document = Jsoup.connect(root).get();

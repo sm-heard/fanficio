@@ -15,6 +15,9 @@ import com.smheard.fanficio.controller.ChapterActivity;
 import com.smheard.fanficio.view.StoryListAdapter.ViewHolder;
 import java.util.ArrayList;
 
+/**
+ * adds stories to recyclerview
+ */
 public class StoryListAdapter extends RecyclerView.Adapter<ViewHolder> {
 
   private ArrayList<String> storyTitles = new ArrayList<>();

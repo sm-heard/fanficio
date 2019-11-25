@@ -22,12 +22,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+/**
+ * Loads the text of a chapter
+ */
 public class ChapterTextActivity extends AppCompatActivity {
 
 
   private ArrayList<String> storyLinks = new ArrayList<>();
   private ArrayList<String> chapterText = new ArrayList<>();
-  //String chapterText;
 
   private int storyPosition;
   private int chapterPosition;

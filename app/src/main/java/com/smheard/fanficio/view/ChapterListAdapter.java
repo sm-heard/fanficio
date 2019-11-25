@@ -14,6 +14,9 @@ import com.smheard.fanficio.controller.ChapterTextActivity;
 import com.smheard.fanficio.view.ChapterListAdapter.ViewHolder;
 import java.util.ArrayList;
 
+/**
+ * adds chapters to recyclerview
+ */
 public class ChapterListAdapter extends RecyclerView.Adapter<ViewHolder> {
 
 
