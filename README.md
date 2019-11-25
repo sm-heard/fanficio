@@ -30,6 +30,9 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 [JavaDocs](docs/index.html)
 [Demo](docs/demo.gif)
 
+## Demo
+(docs/demo.gif)
+
 ## First milestones
 * [x] Description
 * [x] Intended Users
