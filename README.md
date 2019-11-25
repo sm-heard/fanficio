@@ -1,7 +1,7 @@
 ## Description
 I decided to create this app because I've found reading fanfiction on fanfiction.net can be annoying sometimes.  I've often wished I had features like knowing which chapters I've already read.  I wanted to create a minimalist interface for reading that had all the features I wanted.
 
-Currently the app pulls stories (favorite list) off of fanfiction.net(user: Samghost) for offline viewing.  Has a clean, simple interface to read stories (material design guidelines color palette).
+Currently the app pulls stories (favorite list) off of fanfiction.net(user: Samghost) for offline viewing.  Has a clean, simple interface to read stories (material design guidelines color palette). Custom app icon.
 
 Future intended functionality: Uses Google for authorizing (currently nonfunctional), marks chapters already read as READ, marks story as READ when all chapters have been read, database full functional and stories persist without internet connection (currently internet connection is necessary).
 
@@ -26,7 +26,8 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 [ERDs](docs/erd.md)  
 [DDL](docs/ddl.md)  
 [License](docs/license-info.md)   
-[User Instructions](docs/user_instructions.md)
+[User Instructions](docs/user_instructions.md)   
+[JavaDocs](docs/index.html)
 
 ## First milestones
 * [x] Description
@@ -46,3 +47,7 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 * [x] Database Class
 * [x] DDL
 * [x] Chrome Inspectablity
+
+## Third Milestone
+* [x] Documentation
+* [x] Implementation Components
