@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `${TABLE_NAME}`
+CREATE TABLE IF NOT EXISTS `${Story}`
 (
     `story_id`    INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     `storyName`   TEXT,
@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `${TABLE_NAME}`
     `favorite`    INTEGER                           NOT NULL,
     `alert`       INTEGER                           NOT NULL
 )
-CREATE TABLE IF NOT EXISTS `${TABLE_NAME}`
+CREATE TABLE IF NOT EXISTS `${Chapter}`
 (
     `chapter_id`  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     `story_id`    INTEGER                           NOT NULL,

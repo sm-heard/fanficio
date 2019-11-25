@@ -8,7 +8,10 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.smheard.fanficio.FanficioApplication;
 import com.smheard.fanficio.R;
+import com.smheard.fanficio.model.entity.Story;
+import com.smheard.fanficio.service.FanficioDatabase;
 import com.smheard.fanficio.view.StoryListAdapter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,16 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
   private RecyclerView recyclerView;
 
+  private FanficioDatabase database;
+
   private ArrayList<String> storyTitles = new ArrayList<>();
 
   private StoryListAdapter storyListAdapter;
 
   private ProgressBar progressBar;
 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    final FanficioDatabase database = FanficioDatabase.getInstance();
     recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.HORIZONTAL));
 
@@ -71,7 +78,12 @@ public class MainActivity extends AppCompatActivity {
       Elements stitles =  document.getElementsByClass("stitle");
       for (Element stitle:stitles) {
         storyTitles.add(stitle.text());
+        //adding story to db
+//        Story story = new Story();
+//        story.setStoryName(stitle.text());
+//        database.getStoryDao().addStory(story);
       }
+
       progressBar.setVisibility(View.GONE);
       storyListAdapter.notifyDataSetChanged();
     }

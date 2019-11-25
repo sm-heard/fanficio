@@ -21,19 +21,19 @@ public class Chapter {
 
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "chapter_id")
-  long chapterId;
+  private long chapterId;
 
   @ColumnInfo(name = "story_id", index = true )
   private long storyId;
 
   @NonNull
-  String chapterName;
+  private String chapterName;
 
   @NonNull
-  Date lastUpdate = new Date();
+  private Date lastUpdate = new Date();
 
   @NonNull
-  Date lastRead = new Date();
+  private Date lastRead = new Date();
 
   public long getChapterId() {
     return chapterId;

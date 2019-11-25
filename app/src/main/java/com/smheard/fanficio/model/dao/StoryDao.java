@@ -11,7 +11,7 @@ import com.smheard.fanficio.model.entity.Story;
 public interface StoryDao {
 
   @Insert
-  long insert(Story story);
+  long addStory(Story story);
 
   @Query("SELECT * FROM story WHERE story_id = :storyId")
   Story getStory(long storyId);

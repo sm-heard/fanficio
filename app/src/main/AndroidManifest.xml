@@ -3,7 +3,7 @@
   package="com.smheard.fanficio">
 
   <application
-    android:allowBackup="true"
+    android:allowBackup="false"
     android:icon="@drawable/fanficiologo"
     android:label="Fanficio"
     android:logo="@drawable/fanficiologo"
@@ -11,14 +11,14 @@
     android:roundIcon="@drawable/fanficiologo"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+    <activity android:name=".controller.LoginActivity">
 
+    </activity>
     <activity android:name=".controller.ChapterTextActivity">
     </activity>
     <activity android:name=".controller.ChapterActivity">
     </activity>
-
-    <activity
-      android:name=".controller.MainActivity">
+    <activity android:name=".controller.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 

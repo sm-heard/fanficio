@@ -1,2 +1,3 @@
 <resources>
+  <string name="login_failure_message">Unable to log in with Google Sign In</string>
 </resources>

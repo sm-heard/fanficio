@@ -11,7 +11,7 @@ import com.smheard.fanficio.model.entity.Chapter;
 public interface ChapterDao {
 
   @Insert
-  long insert(Chapter chapter);
+  long addChapter(Chapter chapter);
 
   @Query("SELECT * FROM chapter WHERE chapter_id = :chapterId")
   Chapter getChapter(long chapterId);

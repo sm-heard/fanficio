@@ -7,23 +7,23 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import java.util.Date;
 
-@Entity
+@Entity()
 public class Story {
 
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "story_id")
-  long storyId;
+  private long storyId;
 
-  String storyName;
-
-  @NonNull
-  Date lastUpdated = new Date();
+  private String storyName;
 
   @NonNull
-  boolean favorite;
+  private Date lastUpdated = new Date();
 
   @NonNull
-  boolean alert;
+  private boolean favorite;
+
+  @NonNull
+  private boolean alert;
 
   public long getStoryId() {
     return storyId;

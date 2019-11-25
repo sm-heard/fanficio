@@ -10,6 +10,8 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.smheard.fanficio.R;
+import com.smheard.fanficio.model.entity.Chapter;
+import com.smheard.fanficio.service.FanficioDatabase;
 import com.smheard.fanficio.view.ChapterListAdapter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ public class ChapterActivity extends AppCompatActivity {
   private ArrayList<String> storyLinks = new ArrayList<>();
   private int position;
 
-
+  private FanficioDatabase database;
 
   private ArrayList<String> chapterTitles = new ArrayList<>();
 
@@ -37,6 +39,8 @@ public class ChapterActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
+    //final FanficioDatabase database = FanficioDatabase.getInstance();
 
     int position = getIntent().getExtras().getInt("position");
     this.position = position;
@@ -139,6 +143,10 @@ public class ChapterActivity extends AppCompatActivity {
 
       for (int i = 1; i < numOfChapters+1; i++) {
         chapterTitles.add(String.valueOf(i));
+        //add chapter to db
+//        Chapter chapter = new Chapter();
+//        chapter.setChapterName(String.valueOf(i));
+//        database.getChapterDao().addChapter(chapter);
       }
 
       progressBar.setVisibility(View.GONE);

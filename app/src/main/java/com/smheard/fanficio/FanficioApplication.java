@@ -9,8 +9,8 @@ public class FanficioApplication extends Application {
   @Override
   public void onCreate() {
     super.onCreate();
-//    Stetho.initializeWithDefaults(this);
-//    FanficioDatabase.setApplicationContext(this);
-//    final FanficioDatabase database = FanficioDatabase.getInstance();
+    Stetho.initializeWithDefaults(this);
+    FanficioDatabase.setApplicationContext(this);
+    final FanficioDatabase database = FanficioDatabase.getInstance();
   }
 }
