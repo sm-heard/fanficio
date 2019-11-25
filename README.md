@@ -28,10 +28,9 @@ Readers of fanfic who want useful features like offline reading and tracking cha
 [License](docs/license-info.md)   
 [User Instructions](docs/user_instructions.md)   
 [JavaDocs](docs/index.html)
-[Demo](docs/demo.gif)
 
 ## Demo
-![Alt Text](docs/demo.gif)
+![Demo](docs/demo.gif)
 
 ## First milestones
 * [x] Description
