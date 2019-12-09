@@ -3,7 +3,7 @@ I decided to create this app because I've found reading fanfiction on fanfiction
 
 Currently the app pulls stories (favorite list) off of fanfiction.net(user: Samghost) for offline viewing.  Has a clean, simple interface to read stories (material design guidelines color palette). Custom app icon.
 
-Future intended functionality: Uses Google for authorizing (currently nonfunctional), marks chapters already read as READ, marks story as READ when all chapters have been read, database full functional and stories persist without internet connection (currently internet connection is necessary).  Rework to MVVM with Reactive framework. Aesthetic customization. Add menu in each chapter to other chapters.  Add support for Ao3.
+Future intended functionality: Uses Google for authorizing (currently nonfunctional), marks chapters already read as READ, marks story as READ when all chapters have been read, database full functional and stories persist without internet connection (currently internet connection is necessary).  Rework to MVVM with Reactive framework. Aesthetic customization. Add menu in each chapter to other chapters.  Add support for Ao3.  Make API more modular with granular Jsoup calls.
 
 ## Intended Users
 Readers of fanfic who want useful features like offline reading and tracking chapters and stories already read.
