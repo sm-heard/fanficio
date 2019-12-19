@@ -47,6 +47,8 @@ public class GoogleSignInService {
     return InstanceHolder.INSTANCE;
   }
 
+  //TODO test instance
+
   /**
    * gets account
    * @return
